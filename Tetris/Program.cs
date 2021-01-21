@@ -8,33 +8,31 @@ namespace Tetris
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!**");
 
-            Console.SetWindowSize(40, 30);
-            Console.SetBufferSize(40, 30);
-            
-            int x1 = 2, y1 = 3;
-            char c1 = '*';
-
-            Draw(x1, y1, c1);
-
-            int x2 = 2, y2 = 3;
-            char c2 = '#';
+            Console.SetWindowSize(30, 40);
+            Console.SetBufferSize(30, 40);
 
 
-            Draw(x2, y2, c2);
+            Point p1 = new Point();
+            p1.x = 2;
+            p1.y = 5;
+            p1.c = '*';
+
+            p1.Draw();
+
+            Point p2 = new Point();
+            p2.x = 5;
+            p2.y = 8;
+            p2.c = '*';
+
+            p2.Draw();
+
+
 
 
 
 
             Console.ReadLine();
-
-        }
-    
-        static void Draw(int x, int y, char ch)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(ch);
 
         }
     
